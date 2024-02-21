@@ -7,25 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F058F95289168D200CB3E65 /* NUTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F058F94289168D200CB3E65 /* NUTViewController.swift */; };
+		4F058F9A289169E700CB3E65 /* UPSnutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F058F99289169E700CB3E65 /* UPSnutViewController.swift */; };
+		4F2B18252892FF8700C647A5 /* NISQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B18242892FF8700C647A5 /* NISQuery.swift */; };
+		4F2B18282892FFE500C647A5 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 4F2B18272892FFE500C647A5 /* Socket */; };
+		4F2B182A2893001A00C647A5 /* NUTQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B18292893001A00C647A5 /* NUTQuery.swift */; };
+		4F2B182C289300A700C647A5 /* APCDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F2B182B289300A700C647A5 /* APCDetailController.swift */; };
 		4F61A7F0288FF607006BDEB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A7EF288FF607006BDEB1 /* AppDelegate.swift */; };
 		4F61A7F2288FF607006BDEB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A7F1288FF607006BDEB1 /* SceneDelegate.swift */; };
-		4F61A7F4288FF607006BDEB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A7F3288FF607006BDEB1 /* ViewController.swift */; };
+		4F61A7F4288FF607006BDEB1 /* APCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A7F3288FF607006BDEB1 /* APCViewController.swift */; };
 		4F61A7F7288FF607006BDEB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F61A7F5288FF607006BDEB1 /* Main.storyboard */; };
 		4F61A7FA288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A7F8288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld */; };
 		4F61A7FC288FF609006BDEB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F61A7FB288FF609006BDEB1 /* Assets.xcassets */; };
-		4F61A7FF288FF609006BDEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F61A7FD288FF609006BDEB1 /* LaunchScreen.storyboard */; };
+		4F61A807288FF62C006BDEB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F61A806288FF62C006BDEB1 /* LaunchScreen.storyboard */; };
+		4F7AE17B2894BC3800AE9A49 /* SrvStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7AE17A2894BC3800AE9A49 /* SrvStatus.swift */; };
+		4F7AE17D2894C3B900AE9A49 /* NUTAddServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7AE17C2894C3B900AE9A49 /* NUTAddServer.swift */; };
+		4F84C9DC2893C2830068B19E /* APCAddServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F84C9DB2893C2830068B19E /* APCAddServer.swift */; };
+		4F90474D28932DD0003A466B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474C28932DD0003A466B /* ActivityIndicator.swift */; };
+		4F90474F28933584003A466B /* NUTDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474E28933584003A466B /* NUTDetailController.swift */; };
+		4FAA59F12893BAE000C6E1AD /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4F058F94289168D200CB3E65 /* NUTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUTViewController.swift; sourceTree = "<group>"; };
+		4F058F99289169E700CB3E65 /* UPSnutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPSnutViewController.swift; sourceTree = "<group>"; };
+		4F2B18242892FF8700C647A5 /* NISQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NISQuery.swift; sourceTree = "<group>"; };
+		4F2B18292893001A00C647A5 /* NUTQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NUTQuery.swift; sourceTree = "<group>"; };
+		4F2B182B289300A700C647A5 /* APCDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCDetailController.swift; sourceTree = "<group>"; };
 		4F61A7EC288FF607006BDEB1 /* UPSnut Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UPSnut Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F61A7EF288FF607006BDEB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F61A7F1288FF607006BDEB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4F61A7F3288FF607006BDEB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4F61A7F3288FF607006BDEB1 /* APCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCViewController.swift; sourceTree = "<group>"; };
 		4F61A7F6288FF607006BDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4F61A7F9288FF607006BDEB1 /* UPSnut_Pro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UPSnut_Pro.xcdatamodel; sourceTree = "<group>"; };
 		4F61A7FB288FF609006BDEB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4F61A7FE288FF609006BDEB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F61A800288FF609006BDEB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F61A806288FF62C006BDEB1 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F61A8082890E4CC006BDEB1 /* UPSnut Pro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "UPSnut Pro.entitlements"; sourceTree = "<group>"; };
+		4F7AE17A2894BC3800AE9A49 /* SrvStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SrvStatus.swift; sourceTree = "<group>"; };
+		4F7AE17C2894C3B900AE9A49 /* NUTAddServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUTAddServer.swift; sourceTree = "<group>"; };
+		4F84C9DB2893C2830068B19E /* APCAddServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APCAddServer.swift; sourceTree = "<group>"; };
+		4F90474C28932DD0003A466B /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4F90474E28933584003A466B /* NUTDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUTDetailController.swift; sourceTree = "<group>"; };
+		4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,12 +57,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F2B18282892FFE500C647A5 /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F058F962891695C00CB3E65 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4F058F99289169E700CB3E65 /* UPSnutViewController.swift */,
+				4F90474C28932DD0003A466B /* ActivityIndicator.swift */,
+				4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */,
+				4F7AE17A2894BC3800AE9A49 /* SrvStatus.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		4F61A7E3288FF607006BDEB1 = {
 			isa = PBXGroup;
 			children = (
@@ -58,16 +94,41 @@
 		4F61A7EE288FF607006BDEB1 /* UPSnut Pro */ = {
 			isa = PBXGroup;
 			children = (
+				4F61A8082890E4CC006BDEB1 /* UPSnut Pro.entitlements */,
 				4F61A7EF288FF607006BDEB1 /* AppDelegate.swift */,
 				4F61A7F1288FF607006BDEB1 /* SceneDelegate.swift */,
-				4F61A7F3288FF607006BDEB1 /* ViewController.swift */,
 				4F61A7F5288FF607006BDEB1 /* Main.storyboard */,
 				4F61A7FB288FF609006BDEB1 /* Assets.xcassets */,
-				4F61A7FD288FF609006BDEB1 /* LaunchScreen.storyboard */,
+				4F61A806288FF62C006BDEB1 /* LaunchScreen.storyboard */,
 				4F61A800288FF609006BDEB1 /* Info.plist */,
 				4F61A7F8288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld */,
+				4F058F962891695C00CB3E65 /* Common */,
+				4F9A39BD28913F71005B9BE1 /* APCUPSD */,
+				4F9A39BE28913F8F005B9BE1 /* NUT */,
 			);
 			path = "UPSnut Pro";
+			sourceTree = "<group>";
+		};
+		4F9A39BD28913F71005B9BE1 /* APCUPSD */ = {
+			isa = PBXGroup;
+			children = (
+				4F2B18242892FF8700C647A5 /* NISQuery.swift */,
+				4F84C9DB2893C2830068B19E /* APCAddServer.swift */,
+				4F61A7F3288FF607006BDEB1 /* APCViewController.swift */,
+				4F2B182B289300A700C647A5 /* APCDetailController.swift */,
+			);
+			path = APCUPSD;
+			sourceTree = "<group>";
+		};
+		4F9A39BE28913F8F005B9BE1 /* NUT */ = {
+			isa = PBXGroup;
+			children = (
+				4F2B18292893001A00C647A5 /* NUTQuery.swift */,
+				4F7AE17C2894C3B900AE9A49 /* NUTAddServer.swift */,
+				4F058F94289168D200CB3E65 /* NUTViewController.swift */,
+				4F90474E28933584003A466B /* NUTDetailController.swift */,
+			);
+			path = NUT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,6 +140,7 @@
 			buildPhases = (
 				4F61A7E8288FF607006BDEB1 /* Sources */,
 				4F61A7E9288FF607006BDEB1 /* Frameworks */,
+				4FA1D769289BEB810033F457 /* ShellScript */,
 				4F61A7EA288FF607006BDEB1 /* Resources */,
 			);
 			buildRules = (
@@ -86,6 +148,9 @@
 			dependencies = (
 			);
 			name = "UPSnut Pro";
+			packageProductDependencies = (
+				4F2B18272892FFE500C647A5 /* Socket */,
+			);
 			productName = "UPSnut Pro";
 			productReference = 4F61A7EC288FF607006BDEB1 /* UPSnut Pro.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +179,9 @@
 				Base,
 			);
 			mainGroup = 4F61A7E3288FF607006BDEB1;
+			packageReferences = (
+				4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+			);
 			productRefGroup = 4F61A7ED288FF607006BDEB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -128,7 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F61A7FF288FF609006BDEB1 /* LaunchScreen.storyboard in Resources */,
+				4F61A807288FF62C006BDEB1 /* LaunchScreen.storyboard in Resources */,
 				4F61A7FC288FF609006BDEB1 /* Assets.xcassets in Resources */,
 				4F61A7F7288FF607006BDEB1 /* Main.storyboard in Resources */,
 			);
@@ -136,15 +204,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4FA1D769289BEB810033F457 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Output version & build number to the APP_VERSION label on LaunchScreen.storyboard\nversionNumber=\"$MARKETING_VERSION\"\nbuildNumber=\"$CURRENT_PROJECT_VERSION\"\n\nsed -i \"\" -e \"/userLabel=\\\"APP_VERSION\\\"/s/text=\\\"[^\\\"]*\\\"/text=\\\"Version: $versionNumber ($buildNumber)\\\"/\" \"$PROJECT_DIR/$PROJECT_NAME/LaunchScreen.storyboard\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4F61A7E8288FF607006BDEB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F61A7F4288FF607006BDEB1 /* ViewController.swift in Sources */,
+				4F61A7F4288FF607006BDEB1 /* APCViewController.swift in Sources */,
+				4F058F95289168D200CB3E65 /* NUTViewController.swift in Sources */,
+				4F2B182C289300A700C647A5 /* APCDetailController.swift in Sources */,
 				4F61A7F0288FF607006BDEB1 /* AppDelegate.swift in Sources */,
+				4F2B18252892FF8700C647A5 /* NISQuery.swift in Sources */,
+				4F90474D28932DD0003A466B /* ActivityIndicator.swift in Sources */,
+				4F90474F28933584003A466B /* NUTDetailController.swift in Sources */,
+				4F058F9A289169E700CB3E65 /* UPSnutViewController.swift in Sources */,
+				4FAA59F12893BAE000C6E1AD /* LoadingScreen.swift in Sources */,
+				4F84C9DC2893C2830068B19E /* APCAddServer.swift in Sources */,
 				4F61A7FA288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld in Sources */,
+				4F2B182A2893001A00C647A5 /* NUTQuery.swift in Sources */,
 				4F61A7F2288FF607006BDEB1 /* SceneDelegate.swift in Sources */,
+				4F7AE17B2894BC3800AE9A49 /* SrvStatus.swift in Sources */,
+				4F7AE17D2894C3B900AE9A49 /* NUTAddServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,14 +256,6 @@
 				4F61A7F6288FF607006BDEB1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4F61A7FD288FF609006BDEB1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4F61A7FE288FF609006BDEB1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,16 +380,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = T668NHM4S8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,6 +402,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,16 +414,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 13;
 				DEVELOPMENT_TEAM = T668NHM4S8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +436,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -362,6 +465,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/BlueSocket.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F2B18272892FFE500C647A5 /* Socket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			productName = Socket;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4F61A7F8288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld */ = {

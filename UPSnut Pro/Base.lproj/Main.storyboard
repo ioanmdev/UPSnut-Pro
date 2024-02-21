@@ -1,24 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYz-ly-zbe">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Navigation Controller-->
+        <scene sceneID="ZnA-1r-DHB">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <navigationController id="gYz-ly-zbe" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ng-zx-q5F">
+                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xuL-mV-emc" kind="relationship" relationship="rootViewController" id="3kP-zU-io8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cdL-RU-ZoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="16" y="568"/>
+        </scene>
+        <!--NUT-->
+        <scene sceneID="sak-KC-vuT">
+            <objects>
+                <viewController title="NUT" id="kFZ-Vu-P9L" customClass="NUTViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Aa2-t3-biw">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="upsnutcell" id="AcM-ik-KaR">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AcM-ik-KaR" id="Gdr-Uf-rSE">
+                                    <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="125"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameOfUPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riJ-oj-xiz">
+                                            <rect key="frame" x="20" y="10" width="138" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsname"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhA-Dj-hbR">
+                                            <rect key="frame" x="24.999999999999996" y="50" width="53.666666666666657" height="20.666666666666671"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discharging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ3-xk-NtI">
+                                            <rect key="frame" x="98.666666666666686" y="51" width="91" height="20.666666666666671"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsstatus"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-Fg-fOo">
+                                            <rect key="frame" x="25" y="80.666666666666671" width="60" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-0T-m4N">
+                                            <rect key="frame" x="105" y="81.666666666666671" width="43.666666666666657" height="20.333333333333329"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsbatt"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="RhA-Dj-hbR" firstAttribute="top" secondItem="riJ-oj-xiz" secondAttribute="bottom" constant="10" id="28J-cP-PZt"/>
+                                        <constraint firstItem="9dM-0T-m4N" firstAttribute="leading" secondItem="MqZ-Fg-fOo" secondAttribute="trailing" constant="20" id="3Id-e5-IjS"/>
+                                        <constraint firstItem="9dM-0T-m4N" firstAttribute="top" secondItem="xJ3-xk-NtI" secondAttribute="bottom" constant="10" id="HFg-6f-ReN"/>
+                                        <constraint firstItem="xJ3-xk-NtI" firstAttribute="top" secondItem="riJ-oj-xiz" secondAttribute="bottom" constant="11" id="Ike-9l-hLl"/>
+                                        <constraint firstItem="RhA-Dj-hbR" firstAttribute="leading" secondItem="Gdr-Uf-rSE" secondAttribute="leading" constant="25" id="JOj-rL-KNk"/>
+                                        <constraint firstItem="riJ-oj-xiz" firstAttribute="leading" secondItem="Gdr-Uf-rSE" secondAttribute="leading" constant="20" id="SfB-t9-qSb"/>
+                                        <constraint firstItem="riJ-oj-xiz" firstAttribute="top" secondItem="Gdr-Uf-rSE" secondAttribute="top" constant="10" id="UQW-Yq-Se1"/>
+                                        <constraint firstItem="xJ3-xk-NtI" firstAttribute="leading" secondItem="RhA-Dj-hbR" secondAttribute="trailing" constant="20" id="gZV-H9-L5q"/>
+                                        <constraint firstItem="MqZ-Fg-fOo" firstAttribute="top" secondItem="RhA-Dj-hbR" secondAttribute="bottom" constant="10" id="lZE-yy-Wt7"/>
+                                        <constraint firstItem="MqZ-Fg-fOo" firstAttribute="leading" secondItem="Gdr-Uf-rSE" secondAttribute="leading" constant="25" id="qpa-Dg-bfC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="upsnutcell"/>
+                                <connections>
+                                    <segue destination="pAQ-qE-CHZ" kind="show" id="QRG-PZ-yHO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="NETWORK UPS TOOLS" image="globe" catalog="system" id="Mpv-rN-39E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrf-vb-Zm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="869"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="xl6-zj-YL0">
+            <objects>
+                <hostingController id="pAQ-qE-CHZ" customClass="NUTDetailController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="3vh-Xp-ZHF"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jOp-rP-m9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="869"/>
+        </scene>
+        <!--APCUPSD-->
+        <scene sceneID="HfH-7j-EXs">
+            <objects>
+                <viewController title="APCUPSD" id="wb0-tS-c5g" customClass="APCViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="v4F-XV-4eF">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="upsnutcell" id="Hub-45-ERP">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hub-45-ERP" id="VAE-VO-2CW">
+                                    <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="125"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameOfUPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buk-81-UNs">
+                                            <rect key="frame" x="20" y="10" width="138" height="30"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsname"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-s1-7Ym">
+                                            <rect key="frame" x="24.999999999999996" y="50" width="53.666666666666657" height="20.666666666666671"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discharging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-Ax-R4T">
+                                            <rect key="frame" x="98.666666666666686" y="51" width="91" height="20.666666666666671"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsstatus"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdZ-Bf-Gzn">
+                                            <rect key="frame" x="25" y="80.666666666666671" width="60" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFE-ci-cCc">
+                                            <rect key="frame" x="105" y="81.666666666666671" width="43.666666666666657" height="20.333333333333329"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsbatt"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="buk-81-UNs" firstAttribute="top" secondItem="VAE-VO-2CW" secondAttribute="top" constant="10" id="XOA-Hg-GDm"/>
+                                        <constraint firstItem="2sQ-s1-7Ym" firstAttribute="top" secondItem="buk-81-UNs" secondAttribute="bottom" constant="10" id="YxF-Xx-ssy"/>
+                                        <constraint firstItem="8dt-Ax-R4T" firstAttribute="top" secondItem="buk-81-UNs" secondAttribute="bottom" constant="11" id="bsC-On-Ylb"/>
+                                        <constraint firstItem="2sQ-s1-7Ym" firstAttribute="leading" secondItem="VAE-VO-2CW" secondAttribute="leading" constant="25" id="cgr-Ya-bK8"/>
+                                        <constraint firstItem="8dt-Ax-R4T" firstAttribute="leading" secondItem="2sQ-s1-7Ym" secondAttribute="trailing" constant="20" id="n4u-sd-NAa"/>
+                                        <constraint firstItem="RFE-ci-cCc" firstAttribute="leading" secondItem="GdZ-Bf-Gzn" secondAttribute="trailing" constant="20" id="ntb-1b-fV5"/>
+                                        <constraint firstItem="buk-81-UNs" firstAttribute="leading" secondItem="VAE-VO-2CW" secondAttribute="leading" constant="20" id="o5V-1y-D2D"/>
+                                        <constraint firstItem="GdZ-Bf-Gzn" firstAttribute="leading" secondItem="VAE-VO-2CW" secondAttribute="leading" constant="25" id="oSX-2g-xpm"/>
+                                        <constraint firstItem="GdZ-Bf-Gzn" firstAttribute="top" secondItem="2sQ-s1-7Ym" secondAttribute="bottom" constant="10" id="znL-3Q-xSX"/>
+                                        <constraint firstItem="RFE-ci-cCc" firstAttribute="top" secondItem="8dt-Ax-R4T" secondAttribute="bottom" constant="10" id="zvm-n7-19f"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="upsnutcell"/>
+                                <connections>
+                                    <segue destination="uJx-a1-Bq6" kind="show" id="Ltu-Ox-nT7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="APC UPS DAEMON" image="bolt.circle.fill" catalog="system" id="YkD-3i-evo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XS2-pd-awy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="69"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Z3T-3e-kli">
+            <objects>
+                <hostingController id="uJx-a1-Bq6" customClass="APCDetailController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="y0r-wD-rvJ"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5f6-Bn-gMX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2597" y="69"/>
+        </scene>
+        <!--UPSnut Pro-->
+        <scene sceneID="nCQ-vm-j51">
+            <objects>
+                <tabBarController id="xuL-mV-emc" customClass="UPSnutViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="UPSnut Pro" id="8BY-bF-36K">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="G18-5C-iIH">
+                            <connections>
+                                <action selector="refreshWasClicked:" destination="xuL-mV-emc" id="Sgc-SN-p4f"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YbW-25-fyb">
+                            <connections>
+                                <action selector="addWasClicked:" destination="xuL-mV-emc" id="S2M-Aq-HjX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1by-FR-6bw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wb0-tS-c5g" kind="relationship" relationship="viewControllers" id="qFf-X2-wQV"/>
+                        <segue destination="kFZ-Vu-P9L" kind="relationship" relationship="viewControllers" id="imq-hF-ps1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VG1-CN-cXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="568"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bolt.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
