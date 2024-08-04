@@ -16,20 +16,23 @@ class NUTViewController: UITableViewController {
     {
         loadSavedData()
         animateLoading(context: self)
-        
-        for server in Servers {
-            let statusQuery = NUTQuery()
-            switch statusQuery.GetStatus(server.hostname!, port: server.port, username: server.username!, password: server.password!, nickname: server.nickname!) {
-            case .Success:
-                ServerStatus.append(SrvStatus(BatteryCharge: statusQuery.QueryHashmap["battery.charge"]!, Status: statusQuery.QueryHashmap["ups.status"]!))
-            case .Failure:
-                let errStat = SrvStatus(BatteryCharge: "Unavailable", Status: "Connection Error")
-                ServerStatus.append(errStat)
+        DispatchQueue.global(qos: .userInitiated).async {
+            for server in self.Servers {
+                let statusQuery = NUTQuery()
+                switch statusQuery.GetStatus(server.hostname!, port: server.port, username: server.username!, password: server.password!, nickname: server.nickname!) {
+                case .Success:
+                    self.ServerStatus.append(SrvStatus(BatteryCharge: statusQuery.QueryHashmap["battery.charge"]!, Status: statusQuery.QueryHashmap["ups.status"]!))
+                case .Failure:
+                    let errStat = SrvStatus(BatteryCharge: "Unavailable", Status: "Connection Error")
+                    self.ServerStatus.append(errStat)
+                }
             }
+            
+            DispatchQueue.main.sync() {
+                stopLoading(context: self)
+                self.tableView.reloadData()
+             }
         }
-        
-        stopLoading(context: self)
-        tableView.reloadData()
     }
     
     func loadSavedData()
@@ -63,7 +66,7 @@ class NUTViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Servers.count
+        return ServerStatus.count
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -96,6 +99,7 @@ class NUTViewController: UITableViewController {
             let context = appDelegate.persistentContainer.viewContext
             context.delete(Servers[indexPath.row])
             Servers.remove(at: indexPath.row)
+            ServerStatus.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             do {
         

@@ -18,26 +18,30 @@ class APCViewController: UITableViewController {
         loadSavedData()
         animateLoading(context: self)
         
-        for server in Servers {
-            let statusQuery = NISQuery(.Status)
-            switch statusQuery.Execute(server.hostname!, port: server.port) {
-            case .Success:
-                let bstatus = statusQuery.QueryResult.first { item in item.contains("BCHARGE")
+        DispatchQueue.global(qos: .userInitiated).async {
+            for server in self.Servers {
+                let statusQuery = NISQuery(.Status)
+                switch statusQuery.Execute(server.hostname!, port: server.port) {
+                case .Success:
+                    let bstatus = statusQuery.QueryResult.first { item in item.contains("BCHARGE")
+                    }
+                    
+                    let status = statusQuery.QueryResult.first { item in
+                        item.contains("STATUS")
+                    }
+                    
+                    self.ServerStatus.append(SrvStatus(BatteryCharge: String(bstatus!.split(separator: ":")[1]), Status: String(status!.split(separator: ":")[1])))
+                case .Failure:
+                    let errStat = SrvStatus(BatteryCharge: "Unavailable", Status: "Connection Error")
+                    self.ServerStatus.append(errStat)
                 }
-                
-                let status = statusQuery.QueryResult.first { item in
-                    item.contains("STATUS")
-                }
-                
-                ServerStatus.append(SrvStatus(BatteryCharge: String(bstatus!.split(separator: ":")[1]), Status: String(status!.split(separator: ":")[1])))
-            case .Failure:
-                let errStat = SrvStatus(BatteryCharge: "Unavailable", Status: "Connection Error")
-                ServerStatus.append(errStat)
+            }
+            
+           DispatchQueue.main.sync() {
+               stopLoading(context: self)
+               self.tableView.reloadData()
             }
         }
-        
-        stopLoading(context: self)
-        tableView.reloadData()
     }
     
     func loadSavedData()
@@ -71,7 +75,7 @@ class APCViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Servers.count
+        return ServerStatus.count
     }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,6 +108,7 @@ class APCViewController: UITableViewController {
             let context = appDelegate.persistentContainer.viewContext
             context.delete(Servers[indexPath.row])
             Servers.remove(at: indexPath.row)
+            ServerStatus.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             do {
         

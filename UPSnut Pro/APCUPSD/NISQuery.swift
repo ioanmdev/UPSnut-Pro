@@ -13,7 +13,7 @@ enum NISQueryType {
     case Status
     case Events
 }
-w
+
 enum NISQueryStatus {
     case Success
     case Failure
