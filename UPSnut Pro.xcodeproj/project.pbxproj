@@ -385,8 +385,8 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_TEAM = T668NHM4S8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -401,8 +401,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -419,8 +419,8 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 14;
-				DEVELOPMENT_TEAM = T668NHM4S8;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -435,8 +435,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
