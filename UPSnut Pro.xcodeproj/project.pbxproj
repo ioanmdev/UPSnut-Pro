@@ -402,7 +402,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ioanm.UPSnut-Pro";
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -436,7 +436,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "dev.ioanm.UPSnut-Pro";
+				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
