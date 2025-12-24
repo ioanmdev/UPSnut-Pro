@@ -20,6 +20,10 @@ class UPSnutViewController: UITabBarController {
         {
             (self.selectedViewController as! NUTViewController).refreshCommand(sender)
         }
+        else if (self.selectedViewController is SNMPViewController)
+        {
+            (self.selectedViewController as! SNMPViewController).refreshCommand(sender)
+        }
 
     }
     
@@ -33,6 +37,10 @@ class UPSnutViewController: UITabBarController {
         else if (self.selectedViewController is NUTViewController)
         {
             (self.selectedViewController as! NUTViewController).addCommand(sender)
+        }
+        else if (self.selectedViewController is SNMPViewController)
+        {
+            (self.selectedViewController as! SNMPViewController).addCommand(sender)
         }
     }
     

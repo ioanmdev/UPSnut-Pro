@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYz-ly-zbe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gYz-ly-zbe">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="gYz-ly-zbe" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ng-zx-q5F">
-                        <rect key="frame" x="0.0" y="44" width="428" height="44"/>
+                        <rect key="frame" x="0.0" y="118" width="430" height="54"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -22,52 +22,52 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cdL-RU-ZoN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="16" y="568"/>
+            <point key="canvasLocation" x="-1052" y="288"/>
         </scene>
         <!--NUT-->
         <scene sceneID="sak-KC-vuT">
             <objects>
                 <viewController title="NUT" id="kFZ-Vu-P9L" customClass="NUTViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Aa2-t3-biw">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="upsnutcell" id="AcM-ik-KaR">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="125"/>
+                                <rect key="frame" x="0.0" y="50" width="430" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AcM-ik-KaR" id="Gdr-Uf-rSE">
-                                    <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="399.66666666666669" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameOfUPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riJ-oj-xiz">
-                                            <rect key="frame" x="20" y="10" width="138" height="30"/>
+                                            <rect key="frame" x="20" y="10" width="155" height="33.666666666666664"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsname"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RhA-Dj-hbR">
-                                            <rect key="frame" x="24.999999999999996" y="50" width="53.666666666666657" height="20.666666666666671"/>
+                                            <rect key="frame" x="25.000000000000004" y="53.666666666666657" width="61.333333333333343" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discharging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ3-xk-NtI">
-                                            <rect key="frame" x="98.666666666666686" y="51" width="91" height="20.666666666666671"/>
+                                            <rect key="frame" x="106.33333333333331" y="54.666666666666657" width="104.66666666666669" height="24"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsstatus"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqZ-Fg-fOo">
-                                            <rect key="frame" x="25" y="80.666666666666671" width="60" height="20.333333333333329"/>
+                                            <rect key="frame" x="25" y="87.666666666666671" width="68.666666666666671" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dM-0T-m4N">
-                                            <rect key="frame" x="105" y="81.666666666666671" width="43.666666666666657" height="20.333333333333329"/>
+                                            <rect key="frame" x="113.66666666666667" y="88.666666666666671" width="50.333333333333329" height="24"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsbatt"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hrf-vb-Zm9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="869"/>
+            <point key="canvasLocation" x="1658" y="712"/>
         </scene>
         <!--Detail Controller-->
         <scene sceneID="xl6-zj-YL0">
@@ -108,52 +108,52 @@
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jOp-rP-m9F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597" y="869"/>
+            <point key="canvasLocation" x="2597" y="711"/>
         </scene>
         <!--APCUPSD-->
         <scene sceneID="HfH-7j-EXs">
             <objects>
                 <viewController title="APCUPSD" id="wb0-tS-c5g" customClass="APCViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="v4F-XV-4eF">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="upsnutcell" id="Hub-45-ERP">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="125"/>
+                                <rect key="frame" x="0.0" y="50" width="430" height="125"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hub-45-ERP" id="VAE-VO-2CW">
-                                    <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="125"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="399.66666666666669" height="125"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameOfUPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buk-81-UNs">
-                                            <rect key="frame" x="20" y="10" width="138" height="30"/>
+                                            <rect key="frame" x="20" y="10" width="155" height="33.666666666666664"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsname"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sQ-s1-7Ym">
-                                            <rect key="frame" x="24.999999999999996" y="50" width="53.666666666666657" height="20.666666666666671"/>
+                                            <rect key="frame" x="25.000000000000004" y="53.666666666666657" width="61.333333333333343" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discharging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dt-Ax-R4T">
-                                            <rect key="frame" x="98.666666666666686" y="51" width="91" height="20.666666666666671"/>
+                                            <rect key="frame" x="106.33333333333331" y="54.666666666666657" width="104.66666666666669" height="24"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsstatus"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdZ-Bf-Gzn">
-                                            <rect key="frame" x="25" y="80.666666666666671" width="60" height="20.333333333333329"/>
+                                            <rect key="frame" x="25" y="87.666666666666671" width="68.666666666666671" height="24"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFE-ci-cCc">
-                                            <rect key="frame" x="105" y="81.666666666666671" width="43.666666666666657" height="20.333333333333329"/>
+                                            <rect key="frame" x="113.66666666666667" y="88.666666666666671" width="50.333333333333329" height="24"/>
                                             <accessibility key="accessibilityConfiguration" identifier="upsbatt"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                             <nil key="textColor"/>
@@ -218,18 +218,106 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wb0-tS-c5g" kind="relationship" relationship="viewControllers" id="qFf-X2-wQV"/>
+                        <segue destination="i6B-ai-PcT" kind="relationship" relationship="viewControllers" id="nmh-ca-1hK"/>
                         <segue destination="kFZ-Vu-P9L" kind="relationship" relationship="viewControllers" id="imq-hF-ps1"/>
+                        <segue destination="wb0-tS-c5g" kind="relationship" relationship="viewControllers" id="qFf-X2-wQV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VG1-CN-cXc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="568"/>
+            <point key="canvasLocation" x="-84" y="868"/>
+        </scene>
+        <!--SNMPUPS-->
+        <scene sceneID="Gqu-jR-Ym9">
+            <objects>
+                <viewController title="SNMPUPS" id="i6B-ai-PcT" customClass="SNMPViewController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="125" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aFO-tQ-iQc">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="upsnutcell" id="9is-gC-2gy">
+                                <rect key="frame" x="0.0" y="50" width="430" height="125"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9is-gC-2gy" id="Pdd-Rg-y7p">
+                                    <rect key="frame" x="0.0" y="0.0" width="399.66666666666669" height="125"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameOfUPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QQd-FX-Ekj">
+                                            <rect key="frame" x="20" y="10" width="155" height="33.666666666666664"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsname"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNZ-Sa-lDK">
+                                            <rect key="frame" x="25.000000000000004" y="53.666666666666657" width="61.333333333333343" height="24"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discharging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlP-Hx-q1t">
+                                            <rect key="frame" x="106.33333333333331" y="54.666666666666657" width="104.66666666666669" height="24"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsstatus"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Battery:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghu-pE-uLO">
+                                            <rect key="frame" x="25" y="87.666666666666671" width="68.666666666666671" height="24"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO0-UW-DU9">
+                                            <rect key="frame" x="113.66666666666667" y="88.666666666666671" width="50.333333333333329" height="24"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="upsbatt"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="xO0-UW-DU9" firstAttribute="leading" secondItem="Ghu-pE-uLO" secondAttribute="trailing" constant="20" id="EIo-fN-ShC"/>
+                                        <constraint firstItem="bNZ-Sa-lDK" firstAttribute="top" secondItem="QQd-FX-Ekj" secondAttribute="bottom" constant="10" id="G62-Yx-d8q"/>
+                                        <constraint firstItem="Ghu-pE-uLO" firstAttribute="leading" secondItem="Pdd-Rg-y7p" secondAttribute="leading" constant="25" id="GT9-LM-hKJ"/>
+                                        <constraint firstItem="Ghu-pE-uLO" firstAttribute="top" secondItem="bNZ-Sa-lDK" secondAttribute="bottom" constant="10" id="QOb-8o-0ny"/>
+                                        <constraint firstItem="QQd-FX-Ekj" firstAttribute="top" secondItem="Pdd-Rg-y7p" secondAttribute="top" constant="10" id="VjE-2p-XzV"/>
+                                        <constraint firstItem="hlP-Hx-q1t" firstAttribute="top" secondItem="QQd-FX-Ekj" secondAttribute="bottom" constant="11" id="Xuz-pw-Afs"/>
+                                        <constraint firstItem="xO0-UW-DU9" firstAttribute="top" secondItem="hlP-Hx-q1t" secondAttribute="bottom" constant="10" id="ZYb-bp-1Pc"/>
+                                        <constraint firstItem="bNZ-Sa-lDK" firstAttribute="leading" secondItem="Pdd-Rg-y7p" secondAttribute="leading" constant="25" id="djG-dp-x2w"/>
+                                        <constraint firstItem="hlP-Hx-q1t" firstAttribute="leading" secondItem="bNZ-Sa-lDK" secondAttribute="trailing" constant="20" id="sjW-xP-uqc"/>
+                                        <constraint firstItem="QQd-FX-Ekj" firstAttribute="leading" secondItem="Pdd-Rg-y7p" secondAttribute="leading" constant="20" id="tRU-yd-uRs"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="upsnutcell"/>
+                                <connections>
+                                    <segue destination="TeU-rd-FMK" kind="show" id="9sz-Uq-wEX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="SNMP UPS" image="building.2.crop.circle" catalog="system" id="Qat-ry-MYh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wW8-WF-QWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="1438"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="j1W-0g-h4S">
+            <objects>
+                <hostingController id="TeU-rd-FMK" customClass="SNMPDetailController" customModule="UPSnut_Pro" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EEr-7D-SRo"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lEM-bB-5Mu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2634" y="1438"/>
         </scene>
     </scenes>
     <resources>
-        <image name="bolt.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="bolt.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="building.2.crop.circle" catalog="system" width="128" height="123"/>
+        <image name="globe" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

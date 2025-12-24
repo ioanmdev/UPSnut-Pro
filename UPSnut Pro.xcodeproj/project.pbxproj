@@ -26,6 +26,11 @@
 		4F90474D28932DD0003A466B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474C28932DD0003A466B /* ActivityIndicator.swift */; };
 		4F90474F28933584003A466B /* NUTDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474E28933584003A466B /* NUTDetailController.swift */; };
 		4FAA59F12893BAE000C6E1AD /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */; };
+		4FAFB3332EFA9E3700693836 /* SwiftSnmpKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */; };
+		4FB4512B2EEF1515004FA5F9 /* SNMPQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB451272EEF1515004FA5F9 /* SNMPQuery.swift */; };
+		4FB4512C2EEF1515004FA5F9 /* SNMPAddServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB451282EEF1515004FA5F9 /* SNMPAddServer.swift */; };
+		4FB4512D2EEF1515004FA5F9 /* SNMPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB451292EEF1515004FA5F9 /* SNMPViewController.swift */; };
+		4FB4512E2EEF1515004FA5F9 /* SNMPDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB4512A2EEF1515004FA5F9 /* SNMPDetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,10 @@
 		4F90474C28932DD0003A466B /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		4F90474E28933584003A466B /* NUTDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NUTDetailController.swift; sourceTree = "<group>"; };
 		4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		4FB451272EEF1515004FA5F9 /* SNMPQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMPQuery.swift; sourceTree = "<group>"; };
+		4FB451282EEF1515004FA5F9 /* SNMPAddServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMPAddServer.swift; sourceTree = "<group>"; };
+		4FB451292EEF1515004FA5F9 /* SNMPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMPViewController.swift; sourceTree = "<group>"; };
+		4FB4512A2EEF1515004FA5F9 /* SNMPDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNMPDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2B18282892FFE500C647A5 /* Socket in Frameworks */,
+				4FAFB3332EFA9E3700693836 /* SwiftSnmpKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +113,7 @@
 				4F61A800288FF609006BDEB1 /* Info.plist */,
 				4F61A7F8288FF607006BDEB1 /* UPSnut_Pro.xcdatamodeld */,
 				4F058F962891695C00CB3E65 /* Common */,
+				4FBEF5AE2EEF109E005079A2 /* SNMP */,
 				4F9A39BD28913F71005B9BE1 /* APCUPSD */,
 				4F9A39BE28913F8F005B9BE1 /* NUT */,
 			);
@@ -131,6 +142,17 @@
 			path = NUT;
 			sourceTree = "<group>";
 		};
+		4FBEF5AE2EEF109E005079A2 /* SNMP */ = {
+			isa = PBXGroup;
+			children = (
+				4FB451272EEF1515004FA5F9 /* SNMPQuery.swift */,
+				4FB451282EEF1515004FA5F9 /* SNMPAddServer.swift */,
+				4FB451292EEF1515004FA5F9 /* SNMPViewController.swift */,
+				4FB4512A2EEF1515004FA5F9 /* SNMPDetailController.swift */,
+			);
+			path = SNMP;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +172,7 @@
 			name = "UPSnut Pro";
 			packageProductDependencies = (
 				4F2B18272892FFE500C647A5 /* Socket */,
+				4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */,
 			);
 			productName = "UPSnut Pro";
 			productReference = 4F61A7EC288FF607006BDEB1 /* UPSnut Pro.app */;
@@ -181,6 +204,7 @@
 			mainGroup = 4F61A7E3288FF607006BDEB1;
 			packageReferences = (
 				4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+				4FAFB3312EFA9E3700693836 /* XCRemoteSwiftPackageReference "SwiftSnmpKit" */,
 			);
 			productRefGroup = 4F61A7ED288FF607006BDEB1 /* Products */;
 			projectDirPath = "";
@@ -233,6 +257,10 @@
 				4F058F95289168D200CB3E65 /* NUTViewController.swift in Sources */,
 				4F2B182C289300A700C647A5 /* APCDetailController.swift in Sources */,
 				4F61A7F0288FF607006BDEB1 /* AppDelegate.swift in Sources */,
+				4FB4512B2EEF1515004FA5F9 /* SNMPQuery.swift in Sources */,
+				4FB4512C2EEF1515004FA5F9 /* SNMPAddServer.swift in Sources */,
+				4FB4512D2EEF1515004FA5F9 /* SNMPViewController.swift in Sources */,
+				4FB4512E2EEF1515004FA5F9 /* SNMPDetailController.swift in Sources */,
 				4F2B18252892FF8700C647A5 /* NISQuery.swift in Sources */,
 				4F90474D28932DD0003A466B /* ActivityIndicator.swift in Sources */,
 				4F90474F28933584003A466B /* NUTDetailController.swift in Sources */,
@@ -396,12 +424,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -430,12 +458,12 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "ro.ioanm.UPSnut-Pro";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
@@ -477,6 +505,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		4FAFB3312EFA9E3700693836 /* XCRemoteSwiftPackageReference "SwiftSnmpKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ioanmdev/SwiftSnmpKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -484,6 +520,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
+		};
+		4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FAFB3312EFA9E3700693836 /* XCRemoteSwiftPackageReference "SwiftSnmpKit" */;
+			productName = SwiftSnmpKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 
