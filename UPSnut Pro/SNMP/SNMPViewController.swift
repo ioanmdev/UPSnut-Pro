@@ -16,7 +16,7 @@ class SNMPViewController: UITableViewController {
     {
         loadSavedData()
         animateLoading(context: self)
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.4, execute: {
       
             for server in self.Servers {
                 let statusQuery = SNMPQuery()
@@ -34,7 +34,7 @@ class SNMPViewController: UITableViewController {
                 stopLoading(context: self)
                 self.tableView.reloadData()
              }
-        }
+        })
     }
     
     func loadSavedData()
