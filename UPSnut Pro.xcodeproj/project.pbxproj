@@ -417,7 +417,7 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
@@ -451,7 +451,7 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";

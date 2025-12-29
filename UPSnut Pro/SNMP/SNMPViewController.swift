@@ -16,7 +16,7 @@ class SNMPViewController: UITableViewController {
     {
         loadSavedData()
         animateLoading(context: self)
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 0.4, execute: {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0, execute: {
       
             for server in self.Servers {
                 let statusQuery = SNMPQuery()
