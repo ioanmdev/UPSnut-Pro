@@ -1,5 +1,5 @@
 {
-  "originHash" : "97724bde2e5e6f044e9e0d608310f3ccda13ad8bd86e80201c9a182d37fa62fe",
+  "originHash" : "5ce7a8d6c8f098ae50ead63786b4a17a120a13a67f7c2c8dfd33604f8f38c852",
   "pins" : [
     {
       "identity" : "bluesocket",
@@ -70,7 +70,7 @@
       "location" : "https://github.com/ioanmdev/SwiftSnmpKit",
       "state" : {
         "branch" : "main",
-        "revision" : "05ddce99253c4724500b1c667d0b880eb0acfc7f"
+        "revision" : "7a518747deb56f69d5ba20b896767a99810a2cee"
       }
     }
   ],

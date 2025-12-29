@@ -72,9 +72,14 @@ class SNMPQuery {
     public func GetStatus(_ hostname: String)  -> SNMPQueryStatus
     {
         let sema = DispatchSemaphore (value: 0)
+        
+        // Re-init each time to fix suspend issue
+        SnmpSender.shared = try? SnmpSender()
+        
         guard let snmpSender = SnmpSender.shared else {
             fatalError("Snmp Sender not inialized")
         }
+       
         var addr : String?
         
         Task {
