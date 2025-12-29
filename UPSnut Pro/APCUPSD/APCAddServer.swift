@@ -59,8 +59,8 @@ struct APCAddServerView: View {
                     newServer.port = Int32(self.serverPort) ?? 0
                     do {
                         try context.save()
-                        vcContext?.refreshCommand(self)
                         self.presentationMode.wrappedValue.dismiss()
+                        vcContext?.refreshCommand(self)
                     } catch {
                         print(error.localizedDescription)
                     }

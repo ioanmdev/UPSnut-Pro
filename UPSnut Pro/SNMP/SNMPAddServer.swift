@@ -59,8 +59,8 @@ struct SNMPAddServerView: View {
 
                     do {
                         try context.save()
-                        vcContext?.refreshCommand(self)
                         self.presentationMode.wrappedValue.dismiss()
+                        vcContext?.refreshCommand(self)
                     } catch {
                         print(error.localizedDescription)
                     }

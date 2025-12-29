@@ -25,6 +25,7 @@
 		4F84C9DC2893C2830068B19E /* APCAddServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F84C9DB2893C2830068B19E /* APCAddServer.swift */; };
 		4F90474D28932DD0003A466B /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474C28932DD0003A466B /* ActivityIndicator.swift */; };
 		4F90474F28933584003A466B /* NUTDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F90474E28933584003A466B /* NUTDetailController.swift */; };
+		4F942C302F028A8E005E0E94 /* AsyncDNSResolver in Frameworks */ = {isa = PBXBuildFile; productRef = 4F942C2F2F028A8E005E0E94 /* AsyncDNSResolver */; };
 		4FAA59F12893BAE000C6E1AD /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA59F02893BAE000C6E1AD /* LoadingScreen.swift */; };
 		4FAFB3332EFA9E3700693836 /* SwiftSnmpKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */; };
 		4FB4512B2EEF1515004FA5F9 /* SNMPQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB451272EEF1515004FA5F9 /* SNMPQuery.swift */; };
@@ -67,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F2B18282892FFE500C647A5 /* Socket in Frameworks */,
+				4F942C302F028A8E005E0E94 /* AsyncDNSResolver in Frameworks */,
 				4FAFB3332EFA9E3700693836 /* SwiftSnmpKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +175,7 @@
 			packageProductDependencies = (
 				4F2B18272892FFE500C647A5 /* Socket */,
 				4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */,
+				4F942C2F2F028A8E005E0E94 /* AsyncDNSResolver */,
 			);
 			productName = "UPSnut Pro";
 			productReference = 4F61A7EC288FF607006BDEB1 /* UPSnut Pro.app */;
@@ -205,6 +208,7 @@
 			packageReferences = (
 				4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */,
 				4FAFB3312EFA9E3700693836 /* XCRemoteSwiftPackageReference "SwiftSnmpKit" */,
+				4F942C2E2F028A8E005E0E94 /* XCRemoteSwiftPackageReference "swift-async-dns-resolver" */,
 			);
 			productRefGroup = 4F61A7ED288FF607006BDEB1 /* Products */;
 			projectDirPath = "";
@@ -413,7 +417,7 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
@@ -447,7 +451,7 @@
 				CODE_SIGN_ENTITLEMENTS = "UPSnut Pro/UPSnut Pro.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = J2ZHV5HQ5C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "UPSnut Pro/Info.plist";
@@ -505,6 +509,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		4F942C2E2F028A8E005E0E94 /* XCRemoteSwiftPackageReference "swift-async-dns-resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-async-dns-resolver";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 		4FAFB3312EFA9E3700693836 /* XCRemoteSwiftPackageReference "SwiftSnmpKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ioanmdev/SwiftSnmpKit";
@@ -520,6 +532,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4F2B18262892FFE500C647A5 /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
+		};
+		4F942C2F2F028A8E005E0E94 /* AsyncDNSResolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F942C2E2F028A8E005E0E94 /* XCRemoteSwiftPackageReference "swift-async-dns-resolver" */;
+			productName = AsyncDNSResolver;
 		};
 		4FAFB3322EFA9E3700693836 /* SwiftSnmpKit */ = {
 			isa = XCSwiftPackageProductDependency;

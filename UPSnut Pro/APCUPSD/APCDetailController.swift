@@ -45,7 +45,7 @@ struct APCDetailView: View {
                 List {
                     ForEach(self.statusLines, id: \.self)
                     { resultLine in
-                        Text(String(resultLine))
+                        Text(String(resultLine)).padding(10)
                     }.listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                 }
                 
@@ -53,7 +53,7 @@ struct APCDetailView: View {
                 List {
                     ForEach(self.eventsLines, id: \.self)
                     { resultLine in
-                        Text(String(resultLine))
+                        Text(String(resultLine)).padding(10)
                     }.listRowInsets(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
                 }
                 
