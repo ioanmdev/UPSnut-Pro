@@ -18,7 +18,7 @@ class APCViewController: UITableViewController {
         loadSavedData()
         animateLoading(context: self)
         
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0, execute: {
             for server in self.Servers {
                 let statusQuery = NISQuery(.Status)
                 switch statusQuery.Execute(server.hostname!, port: server.port) {
@@ -41,7 +41,7 @@ class APCViewController: UITableViewController {
                stopLoading(context: self)
                self.tableView.reloadData()
             }
-        }
+        })
     }
     
     func loadSavedData()

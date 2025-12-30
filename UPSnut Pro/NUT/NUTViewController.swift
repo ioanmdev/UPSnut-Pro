@@ -16,7 +16,7 @@ class NUTViewController: UITableViewController {
     {
         loadSavedData()
         animateLoading(context: self)
-        DispatchQueue.global(qos: .userInitiated).async {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 1.0, execute: {
             for server in self.Servers {
                 let statusQuery = NUTQuery()
                 switch statusQuery.GetStatus(server.hostname!, port: server.port, username: server.username!, password: server.password!, nickname: server.nickname!) {
@@ -32,7 +32,7 @@ class NUTViewController: UITableViewController {
                 stopLoading(context: self)
                 self.tableView.reloadData()
              }
-        }
+        })
     }
     
     func loadSavedData()
